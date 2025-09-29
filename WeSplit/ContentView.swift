@@ -49,6 +49,7 @@ struct ContentView: View {
                             Text($0, format: .percent)
                         }
                     }
+
                 }
 
                 Section {
@@ -58,6 +59,7 @@ struct ContentView: View {
                             code: localCurrencyIndentifier
                         )
                     )
+                    .foregroundStyle(tipPercentage == 0 ? .red : .primary)
                 }
             }
             .navigationTitle("WeSplit")
